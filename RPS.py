@@ -32,30 +32,28 @@ while not winner:
 
     if (not winner) and cpu == 1 and rps == ("rock"):
         print("Tie! Well done, please play again.")
-    elif cpu == 1 and rps == ("paper"):
+    elif (not winner) and cpu == 1 and rps == ("paper"):
         print("Victory! Pro player chose rock and you chose scissors!")
         winner = True
     elif (not winner) and cpu == 1 and rps == ("scissors"):
         print("Defeat, CPU chose rock and you chose scissors! Please play again.")
-    elif cpu == 1 and rps == ("paper"):
-        print("Victory! Pro player chose rock and you chose scissors! Please play again.")
-        winner = True
+
 
 
     # If CPU chooses Paper
 
-    if (not winner) and cpu == 2 and rps == ("Rock"):
+    if (not winner) and cpu == 2 and rps == ("rock"):
         print("Defeat, Pro Player chose  and you chose paper and you chose rock. Please play again.")
-    elif (not winner) and cpu == 2 and rps ==("Paper"):
+    elif (not winner) and cpu == 2 and rps ==("paper"):
         print("Tie, Well done! Please play again.")
-    elif cpu == 2 and rps == ("paper"):
+    elif (not winner) and cpu == 2 and rps == ("scissors"):
         print("Victory! Pro player has chosen paper and you have chosen rock.")
         winner = True
 
     # if CPU chooses scissors
 
     if (not winner) and cpu == 3 and rps == ("rock"):
-        print("Well done, PRo Player has chosen scissors and you have chosen rock.")
+        print("Well done, Pro Player has chosen scissors and you have chosen rock.")
         winner = True
     elif (not winner) and cpu == 3 and rps == ("paper)"):
         print("Defeat, Pro player has chosen scissors and you have chosen paper. Please play again.")
