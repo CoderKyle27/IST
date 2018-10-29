@@ -1,11 +1,16 @@
+# Imports
+
 import random
 import time
 
+#  Introduction text
 
 print("You will be playing against a pro player...")
 time.sleep(1)
 print("Found a player!")
 time.sleep(1)
+
+# First variables that save your name
 
 pname = input("What is your name? ")
 time.sleep(1)
@@ -19,6 +24,8 @@ print("2")
 time.sleep(1)
 print("1")
 time.sleep(1)
+
+# Random number (1 = rock), (2 = paper), (3 = scissors)
 cpu = random.randint(1,3)
 
 # The winner variable is used to determine whether a game is won or not
@@ -29,7 +36,6 @@ winner = False
 
 while not winner:
     rps = input("rock, paper or scissors: ")
-
     if (not winner) and cpu == 1 and rps == ("rock"):
         print("Tie! Well done, please play again.")
     elif (not winner) and cpu == 1 and rps == ("paper"):
