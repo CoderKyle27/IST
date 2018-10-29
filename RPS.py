@@ -54,7 +54,7 @@ while not winner:
 
     # if CPU chooses scissors
 
-    if cpu == 3 and rps == ("rock"):
+    if (not winner) and cpu == 3 and rps == ("rock"):
         print("Well done, PRo Player has chosen scissors and you have chosen rock.")
         winner = True
     elif (not winner) and cpu == 3 and rps == ("paper)"):
